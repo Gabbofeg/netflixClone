@@ -1,0 +1,14 @@
+body{
+    background-color: #141414;
+    margin-left: 5vw;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.logoImg{
+    width: 10vw;
+}
+
+.nav-link{
+    color: white;
+}
