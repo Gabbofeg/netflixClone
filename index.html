@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Netflix: Homepage</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,120 +12,161 @@
     />
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
 
-    <!--navbar-start-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#"
+      ><img src="./assets/imgs/Netflix_Logo_RGB.png"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <nav class="navbar navbar-expand-lg netflix-navbar">
-      <div class="navbar-left col-6 d-flex">
-        <a class="navbar-brand" href="#">
-          <img class="logoImg" src="assets/imgs/Netflix_Logo_RGB.png" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">TV Shows</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Movies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Recently Added</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">My List</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="navbar-right col-6 d-flex">
-        <i class="fa-solid fa-magnifying-glass searchIcon"></i>
-        <a>KIDS</a>
-        <img class="bellIcon" src="assets/imgs/bell-svgrepo-com.svg">
-          </g>
-        </svg>
-        <img />
-      </div>
-    </nav>
-
-    <!--navbar-end-->
-
-    
-
-    <!--footer-->
-
-    <div class="container footer">
-      <div class="row">
-        <div class="col-md-10 mx-auto">
-          <div class="row">
-            <div class="col-md-3">
-              <ul>
-                <li>Audio and Subtitle</li>
-                <li>Media Center</li>
-                <li>Privacy</li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul>
-                <li>Audio description</li>
-                <li>Investor Relation</li>
-                <li>Terms and Conditions</li>
-                <li>Legal Notices</li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul>
-                <li>Help Center</li>
-                <li>Jobs</li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul>
-                <li>Gift card</li>
-                <li>Subscription</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-10 mx-auto">
-          <div class="row">
-            <div class="col">
-              <p class="copy-right">@netflix copyright</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#shows">TV Shows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#movies">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#recent">Recently Added</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#list">My List</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto text-light">
+        <i class="bi bi-search mx-2 my-auto"></i>
+        <span class="mx-2 my-auto">KIDS</span>
+        <i class="bi bi-bell-fill mx-2 my-auto"></i>
+        <img class="mx-2 my-auto" src="./assets/avatar.png" alt="" />
+      </ul>
     </div>
+  </nav>
+  <main class="bg-dark text-light">
+      <div class="d-flex mb-4 w-100">
+        <h2 class="mr-5">TV Shows</h2>
+        <div class="dropdown" id="genre">
+          <button
+            class="btn bg-dark text-light border-light dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Genres
+          </button>
+          <div class="dropdown-menu bg-dark  border-light">
+            <a class="dropdown-item text-light" href="#">Azione</a>
+            <a class="dropdown-item text-light" href="#">Commedia</a>
+            <a class="dropdown-item text-light" href="#">Horror</a>
+            <a class="dropdown-item text-light" href="#">Thriller</a>
+            <a class="dropdown-item text-light" href="#">Romantico</a>
+            <a class="dropdown-item text-light" href="#">Avventura</a>
 
-    <!-- footer-end -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/e0851a56d5.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+          </div>
+        </div>
+      </div>
+      <section class="movie-row mb-5">
+          <h3 class="mb-3">Trending now</h3>
+          <div class="row no-gutters flex-nowrap">
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/1.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/2.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/3.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/4.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/5.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/6.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/7.png" alt="">
+                  <div class="movie-shadow"></div>
+              </div>
+      </section>
+      <section class="movie-row mb-5">
+          <h3 class="mb-3">Watch it again</h3>
+          <div class="row no-gutters flex-nowrap">
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/8.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/9.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/10.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/11.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/12.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/13.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/14.png" alt="">
+                  <div class="movie-shadow"></div>
+              </div>
+      </section>
+      <section class="movie-row mb-5">
+          <h3 class="mb-3">New Releases</h3>
+          <div class="row no-gutters flex-nowrap">
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/15.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/16.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/17.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/7.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/14.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/18.png" alt="">
+              </div>
+              <div class="col-2 mx-1 movie-card">
+                  <img src="./assets/imgs/movies/4.png" alt="">
+                  <div class="movie-shadow"></div>
+              </div>
+      </section>
+    </div>
+  </main>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"
+  ></script>
+</body>
 </html>
